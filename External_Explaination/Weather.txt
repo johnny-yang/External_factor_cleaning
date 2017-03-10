@@ -1,0 +1,38 @@
+
+
+
+	-----------------------------------------------------------------------
+	|  				Weather					  | 
+	-----------------------------------------------------------------------	 
+	|     We use one main data source to get data.However, some 	 values	  |		| are missing or they are not the latest.In that sense, we use other	  |
+	| data to fill out the missing values. Thus , you will see 2	files	  |   
+	| named “Weather_crawler_Main” and “Weather_crawler_Alternative”.	  |
+	| They store all raw data scrawled by python shell. In case of some	  |
+	| unknown problems , “ Weather_raw_dara_backup ” will autosave all	  | 
+	| data after data cleaning.						  |
+	-----------------------------------------------------------------------	
+	| 			  Variables Explanation			  |
+	-----------------------------------------------------------------------	
+	| All variables will begin with “C_”.					  |
+	-----------------------------------------------------------------------	
+	| C_COUNTRY - Target Country						  |
+	-----------------------------------------------------------------------	
+	| C_CITY - Target Country (Countires with special georaphy will  	  |	
+	|           contain several representative and regional cities)	  |
+	-----------------------------------------------------------------------
+	| C_DATE — Data collection's time (day)				  |
+	-----------------------------------------------------------------------
+	| C_AVG_TEMP — Average Temperature (C)				  |
+	-----------------------------------------------------------------------
+	| C_MAX_TEMP — Maximum temperature (C)				  |
+	-----------------------------------------------------------------------
+	| C_MIN_TEMP - Minimum temperature (C)				  |
+	-----------------------------------------------------------------------
+	| C_RAINFULL -	Total rainfall and / or snowmelt (mm)			  |
+	-----------------------------------------------------------------------
+	| C_RAIN - Indicates rain or drizzle (1-rain , 0- no rain)		  |
+	-----------------------------------------------------------------------		| C_SNOW - Indicates snow (1 -snow , 0 - no snow )		 	  |
+	-----------------------------------------------------------------------	| C_STORM - Indicates storm (1- storm , 0 - no storm)	  	  |
+	-----------------------------------------------------------------------
+	| C_FOG - Indicates fog (1- fog , 0 - no fog)				  |
+	-----------------------------------------------------------------------

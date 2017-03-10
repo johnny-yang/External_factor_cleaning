@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "source('~/External_factor_cleaning/Function.R', echo=TRUE)\n\nWeather_data<-Weather_data_final_version()\nFuel_data<-Fuel_data_final_version()\nStock_Price_Yahoo<-Stock_Yahoo()\nStock_Price_Google<-Stock_Google()\nHoliday<-Holiday_data_cleaning(\"China\",Developer = F,Date_option=T,\"2010-10-10\")\n\nwrite.csv(Weather_data,file = \"./Final_data_backup(All cleaned data)/Weather_data.csv\",fileEncoding = \"gb18030\")\nwrite.csv(Weather_data,file = \"./Final_data_backup(All cleaned data)/Fuel_data.csv\",fileEncoding = \"gb18030\")\nwrite.csv(Weather_data,file = \"./Final_data_backup(All cleaned data)/Stock_Price_Yahoo.csv\",fileEncoding = \"gb18030\")\nwrite.csv(Weather_data,file = \"./Final_data_backup(All cleaned data)/Stock_Price_Google.csv\",fileEncoding = \"gb18030\")\nwrite.csv(Weather_data,file = \"./Final_data_backup(All cleaned data)/Holiday.csv\",fileEncoding = \"gb18030\")\n\n\n\n# # uploading to MSU database\n# mydb = dbConnect(MySQL(), user='MSU_DB_Manager', password='Embarassing...', dbname='ext_factor', host='10.52.96.130', port = 3306)\n# \n# message(\"Start Preparing Database...\")\n# \n# dbRemoveTable(mydb, \"Weather_data\")\n# dbRemoveTable(mydb, \"Fuel_data\")\n# dbRemoveTable(mydb, \"Stock_Price_Yahoo\")\n# dbRemoveTable(mydb, \"Stock_Price_Google\")\n# dbRemoveTable(mydb, \"Holiday\")\n\n# dbWriteTable(mydb, \"Weather_data\", Weather_data)\n# dbWriteTable(mydb, \"Fuel_data\", Fuel_data)\n# dbWriteTable(mydb, \"Stock_Price_Yahoo\", Stock_Price_Yahoo)\n# dbWriteTable(mydb, \"Stock_Price_Google\", Stock_Price_Google)\n# dbWriteTable(mydb, \"Holiday\", Holiday)\n\n# cat(\"/n\")\n# dbDisconnect(mydb)\n",
+    "created" : 1488769919063.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1358077579",
+    "id" : "752F15CB",
+    "lastKnownWriteTime" : 1488957052,
+    "last_content_update" : 1488957052336,
+    "path" : "~/External_factor_cleaning/Main.R",
+    "project_path" : "Main.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

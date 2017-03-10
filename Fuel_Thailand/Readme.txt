@@ -1,0 +1,1 @@
+Thailand government has some errors on its websites. The problem has feature that the actual date is 2012-11-01. So , I only scrape data after 2013. Please note this problem.
