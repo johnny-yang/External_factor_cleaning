@@ -4,7 +4,6 @@ import requests
 import urllib2
 import urllib
 import re
-from selenium import webdriver
 
 
 # Explaination
@@ -38,8 +37,8 @@ def Control():
     Fuel_Thailand_Year = ["2013", "2014", "2015", "2016"]
 
     # Stock Google control
-    Stock_google_startdate = 'Jan 1, 2017'
-    Stock_google_enddate = 'March 1, 2017'
+    Stock_google_startdate = 'Jan 1, 2000'
+    Stock_google_enddate = 'Jan 1, 2017'
 
     # Weather main control
     Weather_Main_Cities = {"Shanghai": '583620', "Bombay": '430030', "Sydney": '947680', "Bangkok": '484550',
@@ -59,7 +58,7 @@ def Control():
     Weather_Alternative_Dayend = 10
     Weather_Alternative_Monthend = 3
 
-    # # execution
+    # execution
     # Fuel_China(Fuel_China_list)
     # print ("\n\n中国油价数据已经爬取完毕\n\n")
     Stock_Google(Stock_google_startdate, Stock_google_enddate)
@@ -117,22 +116,16 @@ def Fuel_China(list):
 
 
 def Stock_Google_parse_html(cid, Index, Country, start_date, end_date):
+    # 初始化
     start = 0
-    filename = "Stock_Price_Google/"+str(Country) + '.txt'
-    # 使用selenium自动化驱动获取源代码
-    s = get_source_proxy(Stock_Google_get_link(cid, start, start_date, end_date))  # firefox 代理
+    filename = 'Stock_Price_Google/' + str(Country) + '.txt'
     headers = {
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36'
     }
-    # proxy = {'http': 'http://10.139.152.222:3138',
-    #          'https': 'http://10.139.152.222:3138' ,
-    #          'ssl': 'http://10.139.152.222:3138',
-    #          'ftp': 'http://10.139.152.222:3138'}
-    # s = requests.get(get_link(cid, start), headers=headers)  # 开启VPN
+    s = requests.get(Stock_Google_get_link(cid, start, start_date, end_date), headers=headers)  # 开启VPN
     print ("已经成功解析源代码")
-
-    # new_page = re.findall('200,\\n(.*?),', s.text, re.S)  # 开启VPN
-    new_page = re.findall('200,\\n(.*?),', s, re.S)  # firefox 代理
+    # 计算页码
+    new_page = re.findall('200,\\n(.*?),', s.text, re.S)  # 开启VPN
     new_page = int(new_page[0])
     page_info = "需要处理:" + str(new_page) + "行"
     print (page_info)
@@ -140,43 +133,45 @@ def Stock_Google_parse_html(cid, Index, Country, start_date, end_date):
     end = j + 1
     page_information = "需要打开:" + str(end) + "页"
     print page_information
+    # 设置文本标题行
     contents = ["Date\t", "Open\t", "High\t", "Low\t", "Close\t", "Index\t", "Country\n"]
-    # 处理有规律部分
+    # 数据处理
     for j in range(0, end - 1):
+        # 解析源代码
         start = 200 * j
-        s = get_source_proxy(Stock_Google_get_link(cid, start, start_date, end_date))  # firefox 代理
-        # s = requests.get(get_link(cid, start), headers=headers)  # 开启VPN
-        # selector = etree.HTML(s.text)  # 开启VPN
-        selector = etree.HTML(s)  # firefox 代理
+        s = requests.get(Stock_Google_get_link(cid, start, start_date, end_date), headers=headers)  # 开启VPN
+        selector = etree.HTML(s.text)  # 开启VPN
+        # 处理提取数据
         for m in range(2, 202):
+            # 数据处理
             for i in range(1, 7):
-                if (i >= 1 & i <= 5):
-                    tree_path = '//*[@id="prices"]/table/tbody/tr[' + str(m) + ']/td[' + str(
-                        i) + ']/text()'  # 开启VPN
+                if i >= 1 & i <= 5:
+                    tree_path = '//*[@id="prices"]/table/tr[' + str(m) + ']/td[' + str(i) + ']/text()'  # 开启VPN
                     content = selector.xpath(tree_path)
-                    content = content[0]
+                    content = content[0]  # 开启VPN
                     content = Stock_Google_data_cleaning(content) + '\t'
                 if i == 6:
                     content = str(Index) + '\t' + str(Country) + '\n'
                     # print content
                 contents.append(content)
+            # 数据写入
             tempfile = open(filename, "w+")
             for content in contents:
                 tempfile.write(content)
-    # 处理尾页
+
+    ### 处理尾页
+    # 重新初始化
     start = 200 * (j + 1)
-    s = get_source_proxy(Stock_Google_get_link(cid, start, start_date, end_date))  # firefox 代理
-    # s = requests.get(Stock_Google_get_link(cid, start, start_date, end_date), headers=headers)  # 开启VPN
-    # selector = etree.HTML(s.text)  # 开启VPN
-    selector = etree.HTML(s)  # firefox 代理
+    s = requests.get(Stock_Google_get_link(cid, start, start_date, end_date), headers=headers)  # 开启VPN
+    selector = etree.HTML(s.text)  # 开启VPN
     end = (new_page - 200 * (j + 1) + 2)
+    # 数据读写
     for m in range(2, end):
         for i in range(1, 7):
             if (i >= 1 & i <= 5):
-                tree_path = '//*[@id="prices"]/table/tbody/tr[' + str(m) + ']/td[' + str(
-                    i) + ']/text()'  # 开启VPN
+                tree_path = '//*[@id="prices"]/table/tr[' + str(m) + ']/td[' + str(i) + ']/text()'  # 开启VPN
                 content = selector.xpath(tree_path)
-                content = content[0]
+                content = content[0]  # 开启VPN
                 content = Stock_Google_data_cleaning(content) + '\t'
             if i == 6:
                 content = str(Index) + '\t' + str(Country) + '\n'
@@ -235,30 +230,14 @@ def Stock_Google(start_date, end_date):
         Stock_Google_parse_html(Indexcode[i], Indextag[i], Indexcountry[i],start_date,end_date)
         print end_tip
 
-
-def get_source_proxy(url):
-    # set proxy
-    profile = webdriver.FirefoxProfile()
-    # 设置代理
-    profile.set_preference('network.proxy.type', 1)
-    profile.set_preference('network.proxy.http', "10.139.152.222")
-    profile.set_preference('network.proxy.http_port', 3138)
-    profile.set_preference('network.proxy.ssl', "10.139.152.222")
-    profile.set_preference('network.proxy.ssl_port', 3138)
-    # profile.set_preference('network.proxy.socks', "10.139.152.222")
-    # profile.set_preference('network.proxy.socks_port', 3138)
-    # profile.set_preference('network.proxy.ftp', "10.139.152.222")
-    # profile.set_preference('network.proxy.ftp_port', 3138)
-    profile.update_preferences()
-    # 实体化驱动器
-    driver = webdriver.Firefox(executable_path='/Users/ValarMorghulis/Documents/selenium/geckodriver',
-                               firefox_profile=profile)
-
-    driver.get(url)
-    driver.set_page_load_timeout(0.5)
-    html_source = driver.page_source
-    driver.quit()
-    return html_source
+        # google finance 数据代码
+        # 7521596 - SSE Composite Index(SHA:000001) - China_Shanghai
+        # 14240693 - S&P/ASX 200(INDEXASX:XJO) - Austrilia
+        # 15173681 - S&P BSE SENSEX(INDEXBOM:SENSEX) - India
+        # 15920262 - SZSE COMPOSITE INDEX(SHE:399106) - China_Shenzhen
+        # 192906426752897 - SET Index(INDEXBKK:SET) - Thailand
+        # 9947405 - TSEC weighted index(TPE:TAIEX) - Taiwan
+        # 10240920 - S&P/NZX 50 Index Gross ( Gross Index )(NZE:NZ50G) - New zealand
 
 
 def Fuel_Thailand(Month, Year):

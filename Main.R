@@ -4,15 +4,19 @@ Weather_data<-Weather_data_final_version()
 Fuel_data<-Fuel_data_final_version()
 Stock_Price_Yahoo<-Stock_Yahoo()
 Stock_Price_Google<-Stock_Google()
-Holiday<-Holiday_data_cleaning("China",Developer = F,Date_option=T,"2010-10-10")
+Holiday_Au<-Holiday_data_cleaning("Australia",Developer = F,Date_option=T,"2010-10-10")
+Holiday_Cn<-Holiday_data_cleaning("China",Developer = F,Date_option=T,"2010-10-10")
+Holiday_In<-Holiday_data_cleaning("India",Developer = F,Date_option=T,"2010-10-10")
+
 
 write.csv(Weather_data,file = "./Final_data_backup(All cleaned data)/Weather_data.csv",fileEncoding = "gb18030")
-write.csv(Weather_data,file = "./Final_data_backup(All cleaned data)/Fuel_data.csv",fileEncoding = "gb18030")
-write.csv(Weather_data,file = "./Final_data_backup(All cleaned data)/Stock_Price_Yahoo.csv",fileEncoding = "gb18030")
-write.csv(Weather_data,file = "./Final_data_backup(All cleaned data)/Stock_Price_Google.csv",fileEncoding = "gb18030")
-write.csv(Weather_data,file = "./Final_data_backup(All cleaned data)/Holiday.csv",fileEncoding = "gb18030")
+write.csv(Fuel_data,file = "./Final_data_backup(All cleaned data)/Fuel_data.csv",fileEncoding = "gb18030")
+write.csv(Stock_Price_Yahoo,file = "./Final_data_backup(All cleaned data)/Stock_Price_Yahoo.csv",fileEncoding = "gb18030")
+write.csv(Stock_Price_Google,file = "./Final_data_backup(All cleaned data)/Stock_Price_Google.csv",fileEncoding = "gb18030")
+write.csv(Holiday_Au,file = "./Final_data_backup(All cleaned data)/Holiday_Au.csv",fileEncoding = "gb18030")
+write.csv(Holiday_Cn,file = "./Final_data_backup(All cleaned data)/Holiday_Cn.csv",fileEncoding = "gb18030")
+write.csv(Holiday_In,file = "./Final_data_backup(All cleaned data)/Holiday_In.csv",fileEncoding = "gb18030")
 
-rbind()
 
 
 # # uploading to MSU database

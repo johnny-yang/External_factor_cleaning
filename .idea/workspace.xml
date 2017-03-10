@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ef43102-ef8b-489c-87eb-9f569d3a95be" name="Default" comment="" />
+    <list default="true" id="2ef43102-ef8b-489c-87eb-9f569d3a95be" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Control (VPN).py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.Rproj.user/B0F6F3B1/sdb/per/t/752F15CB" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.Rproj.user/B0F6F3B1/sdb/per/t/E7E3DA8B" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final_data_backup(All cleaned data)/Holiday.csv" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final_data_backup(All cleaned data)/Fuel_data.csv" afterPath="$PROJECT_DIR$/Final_data_backup(All cleaned data)/Fuel_data.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final_data_backup(All cleaned data)/Stock_Price_Google.csv" afterPath="$PROJECT_DIR$/Final_data_backup(All cleaned data)/Stock_Price_Google.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final_data_backup(All cleaned data)/Stock_Price_Yahoo.csv" afterPath="$PROJECT_DIR$/Final_data_backup(All cleaned data)/Stock_Price_Yahoo.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final_data_backup(All cleaned data)/Weather_data.csv" afterPath="$PROJECT_DIR$/Final_data_backup(All cleaned data)/Weather_data.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.R" afterPath="$PROJECT_DIR$/Main.R" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Stock_Price_Google/China-Shanghai.txt" afterPath="$PROJECT_DIR$/Stock_Price_Google/China-Shanghai.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Weather_raw_dara_backup/Final_data_backup.csv" afterPath="$PROJECT_DIR$/Weather_raw_dara_backup/Final_data_backup.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Weather_raw_dara_backup/Weather_alternative_backup.csv" afterPath="$PROJECT_DIR$/Weather_raw_dara_backup/Weather_alternative_backup.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web scraping Pilot.py" afterPath="$PROJECT_DIR$/Web scraping Pilot.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,28 +30,40 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Web scraping Pilot.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Web scraping Pilot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web scraping Pilot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="186" column="33" lean-forward="true" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="33" />
               <folding>
                 <element signature="e#24#55#0" expanded="true" />
-                <element signature="e#113#127#0" expanded="false" />
-                <element signature="e#357#1829#0" expanded="false" />
+                <element signature="e#345#3693#0" expanded="false" />
+                <element signature="e#3786#5451#0" expanded="false" />
+                <element signature="e#8093#8679#0" expanded="false" />
+                <element signature="e#8806#9276#0" expanded="false" />
+                <element signature="e#9324#10003#0" expanded="false" />
+                <element signature="e#10050#10745#0" expanded="false" />
+                <element signature="e#10779#11750#0" expanded="false" />
+                <element signature="e#11789#13765#0" expanded="false" />
+                <element signature="e#13797#14671#0" expanded="false" />
+                <element signature="e#14698#15953#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Control (VPN).py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Control (VPN).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="248" column="60" lean-forward="true" selection-start-line="248" selection-start-column="60" selection-end-line="248" selection-end-column="60" />
+              <folding>
+                <element signature="e#24#55#0" expanded="true" />
                 <element signature="e#3751#5416#0" expanded="false" />
-                <element signature="e#4244#5332#0" expanded="false" />
                 <element signature="e#5495#8103#0" expanded="false" />
                 <element signature="e#8230#8700#0" expanded="false" />
                 <element signature="e#8748#9427#0" expanded="false" />
                 <element signature="e#9474#10668#0" expanded="false" />
-                <element signature="e#10707#12683#0" expanded="false" />
-                <element signature="e#11473#12499#0" expanded="false" />
-                <element signature="e#12715#13589#0" expanded="false" />
-                <element signature="e#13616#14871#0" expanded="false" />
-                <element signature="e#13662#13799#0" expanded="false" />
-                <element signature="e#13845#14254#0" expanded="false" />
-                <element signature="e#14950#15512#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -45,7 +72,7 @@
       <file leaf-file-name="Climate alternative data.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Weather_crawler_Alternative/Climate alternative data.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105182">
+            <state relative-caret-position="130917">
               <caret line="7701" column="1" lean-forward="false" selection-start-line="7701" selection-start-column="1" selection-end-line="7701" selection-end-column="1" />
               <folding />
             </state>
@@ -55,14 +82,14 @@
       <file leaf-file-name="Stock_Google_Selenium.py.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stock_Price_Google/Selenium/Stock_Google_Selenium.py.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-65">
-              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state relative-caret-position="54">
+              <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="144" selection-end-column="21" />
               <folding>
+                <element signature="e#24#37#0" expanded="true" />
                 <element signature="e#156#3060#0" expanded="false" />
                 <element signature="e#3093#3471#0" expanded="false" />
                 <element signature="e#3505#4476#0" expanded="false" />
                 <element signature="e#4511#5190#0" expanded="false" />
-                <element signature="e#5217#6185#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -85,8 +112,8 @@
       <file leaf-file-name="Fuel_Thailand.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fuel_Thailand/Fuel_Thailand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="935">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,8 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>parse_html</find>
-      <find>get_link</find>
       <find>data_cleaning</find>
       <find>Stock_Google_get_link</find>
       <find>filename</find>
@@ -113,7 +138,13 @@
       <find>copy_data</find>
       <find>getContent</find>
       <find>tempfile</find>
+      <find>parse_html</find>
+      <find>get_link</find>
+      <find>get_source_proxy</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -125,13 +156,14 @@
         <option value="$PROJECT_DIR$/Stock_Price_Google/Selenium/Crawler using selenium.py" />
         <option value="$PROJECT_DIR$/Fuel_Brent_WTI_cofficient/Cofficient_table_backup.csv" />
         <option value="$PROJECT_DIR$/Web scraping Pilot.py" />
+        <option value="$PROJECT_DIR$/Control (VPN).py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="812" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -148,8 +180,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -190,20 +222,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External_factor_cleaning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External_factor_cleaning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fuel_Thailand" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -213,24 +231,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="reque&#9;null&#9;null&#10;request.get&#9;null&#9;null&#10;self&#9;null&#9;null" />
   </component>
-  <component name="RunManager" selected="Python.Web scraping Pilot">
-    <configuration default="false" name="Weather_crawler_Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Weather_crawler_Main" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="External_factor_cleaning" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Weather_crawler_Main/Weather_crawler_Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Control (VPN)">
     <configuration default="false" name="Crawel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -295,6 +296,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="External_factor_cleaning" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Web scraping Pilot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Control (VPN)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="External_factor_cleaning" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Control (VPN).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -434,19 +452,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Weather_crawler_Main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Crawel" />
-      <item index="2" class="java.lang.String" itemvalue="Python.crawler" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Crawler using selenium" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Web scraping Pilot" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Crawel" />
+      <item index="1" class="java.lang.String" itemvalue="Python.crawler" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Crawler using selenium" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Web scraping Pilot" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Control (VPN)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Web scraping Pilot" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Crawler using selenium" />
-        <item index="2" class="java.lang.String" itemvalue="Python.crawler" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Crawel" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Weather_crawler_Main" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Control (VPN)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Web scraping Pilot" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Crawler using selenium" />
+        <item index="3" class="java.lang.String" itemvalue="Python.crawler" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Crawel" />
       </list>
     </recent_temporary>
   </component>
@@ -467,19 +485,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="812" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="813" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23537703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23467231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32777777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32732317" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5555556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.554785" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -494,13 +512,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Stock_Price_Google/Selenium/Stock_Google_Selenium.py.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -508,12 +519,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="39" />
+      <option name="time" value="48" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Weather_crawler_Main/Weather_crawler_Main.py" />
     <entry file="file://$PROJECT_DIR$/Stock_Price_Google/Selenium/Crawler using selenium.py" />
     <entry file="file://$PROJECT_DIR$/Fuel_Thailand/Thailand oil price.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -717,23 +727,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Weather_crawler_Alternative/Climate alternative data.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105182">
+        <state relative-caret-position="130917">
           <caret line="7701" column="1" lean-forward="false" selection-start-line="7701" selection-start-column="1" selection-end-line="7701" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stock_Price_Google/Selenium/Stock_Google_Selenium.py.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="e#156#3060#0" expanded="false" />
-            <element signature="e#3093#3471#0" expanded="false" />
-            <element signature="e#3505#4476#0" expanded="false" />
-            <element signature="e#4511#5190#0" expanded="false" />
-            <element signature="e#5217#6185#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,33 +747,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Fuel_Thailand/Fuel_Thailand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="935">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stock_Price_Google/Selenium/Stock_Google_Selenium.py.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="144" selection-end-column="21" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+            <element signature="e#156#3060#0" expanded="false" />
+            <element signature="e#3093#3471#0" expanded="false" />
+            <element signature="e#3505#4476#0" expanded="false" />
+            <element signature="e#4511#5190#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web scraping Pilot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="175">
+          <caret line="186" column="33" lean-forward="true" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="33" />
           <folding>
             <element signature="e#24#55#0" expanded="true" />
-            <element signature="e#113#127#0" expanded="false" />
-            <element signature="e#357#1829#0" expanded="false" />
+            <element signature="e#345#3693#0" expanded="false" />
+            <element signature="e#3786#5451#0" expanded="false" />
+            <element signature="e#8093#8679#0" expanded="false" />
+            <element signature="e#8806#9276#0" expanded="false" />
+            <element signature="e#9324#10003#0" expanded="false" />
+            <element signature="e#10050#10745#0" expanded="false" />
+            <element signature="e#10779#11750#0" expanded="false" />
+            <element signature="e#11789#13765#0" expanded="false" />
+            <element signature="e#13797#14671#0" expanded="false" />
+            <element signature="e#14698#15953#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Control (VPN).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="248" column="60" lean-forward="true" selection-start-line="248" selection-start-column="60" selection-end-line="248" selection-end-column="60" />
+          <folding>
+            <element signature="e#24#55#0" expanded="true" />
             <element signature="e#3751#5416#0" expanded="false" />
-            <element signature="e#4244#5332#0" expanded="false" />
             <element signature="e#5495#8103#0" expanded="false" />
             <element signature="e#8230#8700#0" expanded="false" />
             <element signature="e#8748#9427#0" expanded="false" />
             <element signature="e#9474#10668#0" expanded="false" />
-            <element signature="e#10707#12683#0" expanded="false" />
-            <element signature="e#11473#12499#0" expanded="false" />
-            <element signature="e#12715#13589#0" expanded="false" />
-            <element signature="e#13616#14871#0" expanded="false" />
-            <element signature="e#13662#13799#0" expanded="false" />
-            <element signature="e#13845#14254#0" expanded="false" />
-            <element signature="e#14950#15512#0" expanded="false" />
           </folding>
         </state>
       </provider>
